@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?><!--步态曲线页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/btn_select_curve"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select_curve_text"
+            android:textColor="@color/black_color"
+            android:textSize="15sp"/>
+
+        <ImageView
+            style="@style/control_arrow_style"
+            android:background="@drawable/select_drop_down_arrow"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include
+            layout="@layout/layout_gait_item"
+            />
+
+        <ScrollView
+            android:id="@+id/sv_gait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_color"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_angle_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_angle_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/angle_left_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_angle_left_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_angle_right"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                android:id="@+id/acv_angle_right"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_angle_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/angle_right_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_angle_right_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_velocity_left"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_velocity_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_velocity_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/angular_velocity_left_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_velocity_left_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_velocity_right"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_velocity_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tv_velocity_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/angular_velocity_right_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_velocity_right_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_current_left"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_current_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_current_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/current_left_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_current_left_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_current_right"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_current_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tv_current_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/current_right_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_current_right_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_barometric_sensor"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_barometric_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_barometric_sensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/barometric_sensor_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_barometric_sensor_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gait_sv_line_color"
+                    />
+
+                <!--<com.saiyi.smart_control.ui.view.AreaChartView-->
+                    <!--android:id="@+id/acv_sensor"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--/>-->
+
+                <saiyi.com.gulin_new_wz.view.AreaChartView
+                    android:id="@+id/acv_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_sensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ui_version_static_sensor_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/gait_sensor_line_color"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

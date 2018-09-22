@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    >
+
+    <include layout="@layout/header_bar"></include>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/prompt"
+        android:textSize="15dp"
+        android:text="@string/post_success"
+        android:textColor="#4E5969"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="@string/add_success"
+        android:gravity="center"
+        android:textColor="#9FACBD"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_set_btn_success"
+            android:textColor="#FFFFFF"
+
+            />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/btn_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/header"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_set_btn_success_two"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

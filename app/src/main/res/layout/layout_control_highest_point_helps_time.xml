@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?><!--智能控制-最高点助力时间-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_highest_point"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <View style="@style/control_line_style" />
+
+    <LinearLayout
+        android:id="@+id/btn_highest_point_helps_time"
+        style="@style/control_lin_style">
+
+        <ImageView
+            android:id="@+id/iv_highest_point_helps_time"
+            style="@style/control_icon_style"
+            android:background="@mipmap/power_of_time_d" />
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/highest_point_helps_time" />
+
+        <ImageView
+            style="@style/control_arrow_style"
+            android:background="@drawable/select_drop_down_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hph_time_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View style="@style/control_gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/left_and_right_group_control_text"
+                android:textColor="@color/green_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_hph_time_lr_control"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/select_left_and_right_group_control" />
+
+        </LinearLayout>
+
+        <!--左右群控-->
+
+        <View style="@style/control_gray_line_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/gray_white_color"
+            >
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hph_time_lr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/left_and_right_group_control_text"
+                    android:textColor="#4E5969"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_lr_def_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/default_text"
+                        android:textColor="#9FACBD"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_lr_def_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:textColor="#9FACBD"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <saiyi.com.gulin_new_wz.view.SignSeekBar
+                    android:id="@+id/ssb_hph_time_lr_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    app:ssb_anim_duration="300"
+                    app:ssb_auto_adjust_section_mark="false"
+                    app:ssb_max="200"
+                    app:ssb_second_track_color="#00DAB0"
+                    app:ssb_second_track_size="3dp"
+                    app:ssb_section_text_color="#9FACBD"
+                    app:ssb_section_text_position="bottom_sides"
+                    app:ssb_section_text_size="12sp"
+                    app:ssb_show_section_mark="false"
+                    app:ssb_show_section_text="true"
+                    app:ssb_show_thumb_text="false"
+                    app:ssb_sides_labels="@array/labels_short_long_new"
+                    app:ssb_text_space="6dp"
+                    app:ssb_thumb_bg_alpha="0.3"
+                    app:ssb_thumb_color="@color/white_color"
+                    app:ssb_thumb_radius="5dp"
+                    app:ssb_thumb_radius_on_dragging="10dp"
+                    app:ssb_thumb_ratio="0.7"
+                    app:ssb_track_color="#D5DEE7"
+                    app:ssb_track_size="2dp"
+                    app:ssb_unusable_color="#4D9FACBD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/top_tv_highest_helps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_tv_restore"
+                android:singleLine="true"
+                android:text="@string/default_text"
+                android:textColor="#9FACBD"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!--左单控-->
+
+        <View style="@style/control_gray_line_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/gray_white_color"
+            >
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hph_time_left_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/left_single_control_text"
+                    android:textColor="#4D4E5969"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_left_def_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/default_text"
+                        android:textColor="#4D9FACBD"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_left_def_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#4D9FACBD"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <saiyi.com.gulin_new_wz.view.SignSeekBar
+                    android:id="@+id/ssb_hph_time_left_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    app:ssb_anim_duration="300"
+                    app:ssb_auto_adjust_section_mark="false"
+                    app:ssb_max="200"
+                    app:ssb_second_track_color="#00DAB0"
+                    app:ssb_second_track_size="3dp"
+                    app:ssb_section_text_color="#9FACBD"
+                    app:ssb_section_text_position="bottom_sides"
+                    app:ssb_section_text_size="12sp"
+                    app:ssb_show_section_mark="false"
+                    app:ssb_show_section_text="true"
+                    app:ssb_show_thumb_text="false"
+                    app:ssb_sides_labels="@array/labels_short_long_new"
+                    app:ssb_text_space="6dp"
+                    app:ssb_thumb_bg_alpha="0.3"
+                    app:ssb_thumb_color="@color/white_color"
+                    app:ssb_thumb_radius="5dp"
+                    app:ssb_thumb_radius_on_dragging="10dp"
+                    app:ssb_thumb_ratio="0.7"
+                    app:ssb_track_color="#D5DEE7"
+                    app:ssb_track_size="2dp"
+                    app:ssb_unusable_color="#4D9FACBD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/center_tv_highest_helps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_tv_restore"
+                android:singleLine="true"
+                android:text="@string/default_text"
+                android:textColor="#4D9FACBD"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View style="@style/control_gray_line_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/gray_white_color"
+            >
+
+
+
+        <!--右单控-->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hph_time_right_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/right_single_control_text"
+                    android:textColor="#4D4E5969"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_right_def_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/default_text"
+                        android:textColor="#4D9FACBD"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hph_time_right_def_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:visibility="gone"
+                        android:textColor="#4D9FACBD"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <saiyi.com.gulin_new_wz.view.SignSeekBar
+                    android:id="@+id/ssb_hph_time_right_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    app:ssb_anim_duration="300"
+                    app:ssb_auto_adjust_section_mark="false"
+                    app:ssb_max="200"
+                    app:ssb_second_track_color="#00DAB0"
+                    app:ssb_second_track_size="3dp"
+                    app:ssb_section_text_color="#9FACBD"
+                    app:ssb_section_text_position="bottom_sides"
+                    app:ssb_section_text_size="12sp"
+                    app:ssb_show_section_mark="false"
+                    app:ssb_show_section_text="true"
+                    app:ssb_show_thumb_text="false"
+                    app:ssb_sides_labels="@array/labels_short_long_new"
+                    app:ssb_text_space="6dp"
+                    app:ssb_thumb_bg_alpha="0.3"
+                    app:ssb_thumb_color="@color/white_color"
+                    app:ssb_thumb_radius="5dp"
+                    app:ssb_thumb_radius_on_dragging="10dp"
+                    app:ssb_thumb_ratio="0.7"
+                    app:ssb_track_color="#D5DEE7"
+                    app:ssb_track_size="2dp"
+                    app:ssb_unusable_color="#4D9FACBD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/bottom_tv_highest_helps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_tv_restore"
+                android:singleLine="true"
+                android:text="@string/default_text"
+                android:textColor="#4D9FACBD"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

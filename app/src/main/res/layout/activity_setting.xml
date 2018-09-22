@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!--设置界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/btn_developer_mode"
+                style="@style/setting_linear_style">
+
+                <LinearLayout style="@style/setting_child_linear_style">
+
+                    <ImageView
+                        style="@style/setting_icon_style"
+                        android:background="@mipmap/developers" />
+
+                    <TextView
+                        style="@style/setting_tv_style"
+                        android:text="@string/developer_mode_text" />
+
+                    <ImageView style="@style/setting_arrow_right_style" />
+                </LinearLayout>
+
+                <View style="@style/setting_un_line_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_wifi_setting"
+                style="@style/setting_linear_style">
+
+                <LinearLayout style="@style/setting_child_linear_style">
+
+                    <ImageView
+                        style="@style/setting_icon_style"
+                        android:background="@mipmap/wifi" />
+
+                    <TextView
+                        style="@style/setting_tv_style"
+                        android:text="@string/wifi_setting_text" />
+
+                    <ImageView style="@style/setting_arrow_right_style" />
+                </LinearLayout>
+
+                <View style="@style/setting_un_line_style" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_language_settings"
+                style="@style/setting_linear_style">
+
+                <LinearLayout style="@style/setting_child_linear_style">
+
+                    <ImageView
+                        style="@style/setting_icon_style"
+                        android:background="@mipmap/language" />
+
+                    <TextView
+                        style="@style/setting_tv_style"
+                        android:text="@string/language_settings_text" />
+
+                    <ImageView style="@style/setting_arrow_right_style" />
+                </LinearLayout>
+
+                <View style="@style/setting_un_line_style" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_about"
+                style="@style/setting_linear_style">
+
+                <LinearLayout style="@style/setting_child_linear_style">
+
+                    <ImageView
+                        style="@style/setting_icon_style"
+                        android:background="@mipmap/about_us" />
+
+                    <TextView
+                        style="@style/setting_tv_style"
+                        android:text="@string/about_us_text" />
+
+                    <ImageView style="@style/setting_arrow_right_style" />
+                </LinearLayout>
+
+                <View style="@style/setting_un_line_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_factory_reset"
+                style="@style/setting_linear_style">
+
+                <LinearLayout style="@style/setting_child_linear_style">
+
+                    <ImageView
+                        style="@style/setting_icon_style"
+                        android:background="@mipmap/restore" />
+
+                    <TextView
+                        style="@style/setting_tv_style"
+                        android:text="@string/factory_reset_text" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

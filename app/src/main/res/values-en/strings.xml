@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="egistration_text">one</string>
+    <string name="initial_learning">two</string>
+    <string name="training">three</string>
+    <string name="evaluation">four</string>
+    <string name="data_view">five</string>
+    <string name="setting">six</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--整个app基色-->
+    <color name="base_color">#F8F5F1</color>
+    <!--导航栏文字颜色-->
+    <color name="table_default_color">#9FACBD</color>
+    <!--导航栏点击颜色-->
+    <color name="table_click_color">#00DAB0</color>
+    <!--主题颜色-->
+    <color name="theme_color">#3C4859</color>
+
+    <!--白色-->
+    <color name="white_color">#ffffff</color>
+    <!--白色-->
+    <color name="white_color_eb">#EEE9BF</color>
+
+    <!--灰白色-->
+    <color name="gray_white_color">#FAFFFE</color>
+    <!--白色透明度30%-->
+    <color name="white_thirty_percent_color">#4DFFFFFF</color>
+    <!--灰色-->
+    <color name="gray_color">#9FACBD</color>
+    <!--黑色文字-->
+    <color name="black_color">#4E5969</color>
+    <!--未输入字体颜色-->
+    <color name="input_hint_color">#b7b7b7</color>
+    <!--中间间隔线颜色-->
+    <color name="line_color">#D5DEE7</color>
+    <!--灰色中间间隔线-->
+    <color name="line_gray_color">#D8D8D8</color>
+    <!--透明-->
+    <color name="transparent_color">#00000000</color>
+    <!--淡红色-->
+    <color name="red_light_color">#e16a6c</color>
+    <!--绿颜色-->
+    <color name="green_color">#00DAB0</color>
+
+    <color name="gait_angle_left_color">#b1f2e6</color>
+    <color name="gait_angle_left_line_color">#27dfbb</color>
+    <color name="gait_angle_right_color">#bae9fe</color>
+    <color name="gait_angle_right_line_color">#1fbbfe</color>
+    <color name="gait_velocity_left_color">#d8f5ba</color>
+    <color name="gait_velocity_left_line_color">#80e01e</color>
+    <color name="gait_velocity_right_color">#b1eff5</color>
+    <color name="gait_velocity_right_line_color">#01cde0</color>
+    <color name="gait_current_left_color">#fdf3b1</color>
+    <color name="gait_current_left_line_color">#fddb02</color>
+    <color name="gait_current_right_color">#edd9f5</color>
+    <color name="gait_current_right_line_color">#c884e0</color>
+    <color name="gait_barometric_sensor_color">#facad6</color>
+    <color name="gait_barometric_sensor_line_color">#f7547c</color>
+    <color name="gait_sensor_color">#f9e2b1</color>
+    <color name="gait_sensor_line_color">#f0a301</color>
+    <color name="gait_sv_line_color">#f0f4f7</color>
+    <color name="communication_is_sent_color">#FF6A6A</color>
+    <color name="communication_no_sent_color">#C0FF3E</color>
+    <color name="gait_bg_color">#00D8BF</color>
+
+
+    <color name="restore_bg_color">#EEF5F6</color>
+
+    <color name="text1">#000000</color>
+    <color name="text2">#333333</color>
+
+
+</resources>

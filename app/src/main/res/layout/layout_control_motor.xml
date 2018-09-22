@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?><!--智能控制-马达布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_motor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_motor"
+        style="@style/control_lin_style">
+
+        <ImageView
+            android:id="@+id/iv_motor"
+            style="@style/control_icon_style"
+            android:background="@mipmap/motor_pre" />
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/motor_text" />
+
+        <ImageView
+            style="@style/control_arrow_style"
+            android:background="@drawable/select_drop_down_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_motor_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <View style="@style/control_gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/left_and_right_group_control_text"
+                android:textColor="@color/green_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_motor_lr_control"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/select_left_and_right_group_control" />
+
+        </LinearLayout>
+
+        <View style="@style/control_gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_motor_lr_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/left_and_right_group_control_text"
+                android:textColor="#4d4E5969"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_motor_lr_switch"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/on_d" />
+
+        </LinearLayout>
+
+        <View style="@style/control_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_motor_left_control_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/left_single_control_text"
+                android:textColor="#4E5969"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_motor_left_control_switch"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/on"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <View style="@style/control_gray_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gray_white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_motor_right_control_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/right_single_control_text"
+                android:textColor="#4E5969"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_motor_right_control_switch"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/off"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

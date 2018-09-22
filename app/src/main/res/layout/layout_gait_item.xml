@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!--智能控制-刹车时间-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_angle_left"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/angle_left_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_angle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_angle_right"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/angle_right_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_angle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_velocity_left"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/angular_velocity_left_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_velocity_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_velocity_right"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/angular_velocity_right_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_velocity_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_current_left"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/current_left_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_current_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_current_right"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/current_right_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_current_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_barometric_sensor"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/barometric_sensor_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_barometric_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+    <LinearLayout
+        android:id="@+id/ll_sensor"
+        style="@style/control_lin_style">
+
+        <TextView
+            style="@style/control_text_style"
+            android:text="@string/ui_version_static_sensor_text"
+            android:textColor="@color/gray_color"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View style="@style/control_gray_line_style" />
+
+
+</LinearLayout>

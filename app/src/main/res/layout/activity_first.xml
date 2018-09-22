@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?><!--智能控制页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/theme_color"
+        ></View>
+
+    <include layout="@layout/first_tabar_header"></include>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_egistration"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+
+            >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableTop="@mipmap/registration"
+                 android:text="@string/egistration_text"
+                 android:textSize="15dp"
+                 android:textColor="#4E5969"
+                 android:gravity="center"
+                 android:layout_centerInParent="true"
+                 />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_learning"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/learning"
+                android:text="@string/initial_learning"
+                android:textSize="15dp"
+                android:textColor="#4E5969"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_training"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/training"
+                android:text="@string/training"
+                android:textSize="15dp"
+                android:textColor="#4E5969"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_assessment"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/assessment"
+                android:text="@string/evaluation"
+                android:textSize="15dp"
+                android:textColor="#4E5969"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_data"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/data"
+                android:text="@string/data_view"
+                android:textSize="15dp"
+                android:textColor="#4E5969"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/first_btn_bg"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/setting"
+                android:text="@string/setting"
+                android:textSize="15dp"
+                android:textColor="#4E5969"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

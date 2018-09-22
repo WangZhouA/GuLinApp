@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    >
+
+
+    <include layout="@layout/header_bar"></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_tab_InformationCollection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_tab_InformationCollection"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/InformationCollection"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+
+
+            <View
+                android:id="@+id/view_InformationCollection"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="#00DAB0"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                ></View>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_tab_EvaluationHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_tab_EvaluationHistory"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/EvaluationHistory"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+
+            <View
+                android:id="@+id/view_EvaluationHistory"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="#00DAB0"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                ></View>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

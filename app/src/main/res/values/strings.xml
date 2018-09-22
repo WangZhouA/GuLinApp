@@ -1,0 +1,360 @@
+<resources>
+    <string name="app_name">智能控制</string>
+    <string name="not_networks_conntion">没有网络连接,请稍后再试</string>
+
+
+
+    <!---->
+   <string name="sure">确定</string>
+   <string name="cancel">取消</string>
+
+
+    <!--first-->
+    <string name="Legs_mode_text">双腿模式</string>
+    <string name="toggle_text">切换</string>
+    <string name="egistration_text">注册登记</string>
+    <string name="initial_learning">初始学习</string>
+    <string name="training">训练</string>
+    <string name="evaluation">评估</string>
+    <string name="data_view">数据查看</string>
+    <string name="setting">设置</string>
+
+    <!--注册登记-->
+
+    <string name="name">姓名</string>
+    <string name="age">年龄</string>
+    <string name="hight">身高</string>
+    <string name="gender">性别</string>
+    <string name="weight">体重</string>
+    <string name="remarks">备注</string>
+    <string name="entering_person">录入人</string>
+    <string name="Doctors_name">医生姓名</string>
+    <string name="not_set">未设置</string>
+    <string name="save">保存</string>
+    <string name="history_record">历史记录</string>
+
+    <!--设置用户信息-->
+
+    <string name="set_name">设置名字</string>
+    <string name="set_age">设置年龄</string>
+    <string name="set_hight">设置身高</string>
+    <string name="set_gender">设置性别</string>
+    <string name="set_weight">设置体重</string>
+    <string name="set_remarks">设置备注</string>
+    <string name="set_entering_person">设置录入人</string>
+    <string name="set_doctors_name">设置医生姓名</string>
+    <string name="edit_not_null">信息不能为空</string>
+    <string name="post_success">信息提交成功！</string>
+    <string name="add_success">添加成功！下一步可采集头像</string>
+    <string name="add">添加</string>
+    <string name="header">采集头像</string>
+    <string name="sheqi">舍弃</string>
+    <string name="xuanqu">选取</string>
+    <string name="xiangji">相机</string>
+    <string name="xiangce">相册</string>
+    <string name="Please_insert_memory_card">请打开相机权限</string>
+
+ <!--学习-->
+       <string name="studying">正在学习</string>
+       <string name="onstudying">是否开始学习</string>
+       <string name="yes">是</string>
+       <string name="no">否</string>
+       <string name="nostudying">是否结束学习</string>
+
+<!--设置-->
+
+ <string name="developer_mode_text">开发者模式</string>
+ <string name="wifi_setting_text">WIFI设置</string>
+ <string name="language_settings_text">语言设置</string>
+ <string name="about_us_text">关于我们</string>
+ <string name="factory_reset_text">恢复出厂设置</string>
+
+
+ <!--评估-->
+
+ <string name="InformationCollection">信息采集</string>
+ <string name="EvaluationHistory">评估历史</string>
+ <string name="Collecting">正在采集</string>
+ <string name="Collected_time">已采集时长</string>
+<string name="stop">停止</string>
+<string name="CollectedDate">采集数据</string>
+
+
+
+ <!--首页-->
+ <string name="bluetooth_text">蓝牙</string>
+ <string name="connect_text">连接</string>
+ <string name="un_connect_text">未连接</string>
+ <string name="connect_already_text">已连接</string>
+ <string name="connecting_text">连接中...</string>
+ <string name="disconnect_text">断开</string>
+
+<!--马达-->
+ <string name="motor_text">马达</string>
+
+
+
+ <string name="smart_control_text">智能控制</string>
+ <string name="gait_curve_text">步态曲线</string>
+ <string name="communication_data_text">通信数据</string>
+ <string name="setting_text">设置</string>
+ <string name="title">标题</string>
+ <string name="network_anomaly">无法连接服务，请检查网络或重试</string>
+ <string name="tips">提示</string>
+ <string name="login_out_tips">确定退出当前登录吗？</string>
+ <string name="cancel_text">取消</string>
+ <string name="no_browse">未安装任何浏览器工具</string>
+
+ <string name="stroke_mode_text">单腿模式</string>
+ <string name="sensitivity_angle_text">角度模式</string>
+ <string name="angular_velocity_sensitivity_text">角速度模式</string>
+ <string name="Sensitivity">灵敏度</string>
+ <string name="wifi_text">WIFI</string>
+ <string name="trigger_time_text">触发时间</string>
+ <string name="stroke_choice_text">中风选择</string>
+ <string name="left_stroke">左中风</string>
+ <string name="right_stroke">右中风</string>
+ <string name="power_gear_text">力量档位</string>
+ <string name="assist_angle_range">助力角范围</string>
+ <string name="initial_brake_force_text">初始刹车力</string>
+ <string name="big_initial_brake_force_time_text">最大刹车力保持时间</string>
+ <string name="braking_time_text">刹车时间</string>
+ <string name="highest_point_helps_time">最高点助力时间</string>
+ <string name="save_param_text">参数保存</string>
+ <string name="emergency_brake_text">紧急制动</string>
+ <string name="left_single_control_text">左单控</string>
+ <string name="right_single_control_text">右单控</string>
+ <string name="left_and_right_group_control_text">左右群控</string>
+ <string name="default_text">默认:</string>
+ <string name="restore_defaults">恢复默认值</string>
+ <string-array name="labels">
+  <item>低</item>
+  <item>中</item>
+  <item>高</item>
+ </string-array>
+
+ <string-array name="labels_new">
+  <item>10</item>
+  <item>20</item>
+  <item>30</item>
+  <item>40</item>
+  <item>50</item>
+  <item>60</item>
+  <item>70</item>
+  <item>80</item>
+  <item>90</item>
+ </string-array>
+
+ <string name="level_low_new">10</string>
+
+
+
+
+
+
+
+
+
+ <string-array name="labels_short_long">
+  <item>低(1ms)</item>
+  <item>高(100ms)</item>
+ </string-array>
+ <string-array name="labels_short_long_new">
+  <item>低(0ms)</item>
+  <item>高(200ms)</item>
+ </string-array>
+ <string-array name="labels_low_high_angle">
+  <item>低(0°/s)</item>
+  <item>高(100°/s)</item>
+ </string-array>
+
+ <string-array name="labels_TOP">
+  <item>0%</item>
+  <item>40%</item>
+ </string-array>
+
+ <string-array name="labels_CENTER">
+  <item>41%</item>
+  <item>70%</item>
+ </string-array>
+
+ <string-array name="labels_BOTTOM">
+  <item>71%</item>
+  <item>100%</item>
+ </string-array>
+
+
+
+
+
+ <string-array name="labels_low_high">
+  <item>低(0°)</item>
+  <item>高(100°)</item>
+ </string-array>
+
+
+ <string name="labels_low_high_wz">
+
+        <item>低(0)</item>
+          <item>高(100)</item>
+    </string>
+
+
+
+
+ <string-array name="labels_trigger_time">
+  <item>低(0s)</item>
+  <item>高(5s)</item>
+ </string-array>
+
+
+
+
+
+ <string name="bluetooth_connection_text">蓝牙连接中...</string>
+ <string name="bluetooth_connection_failed_text">蓝牙连接失败</string>
+ <string name="bluetooth_connection_success_text">蓝牙连接成功</string>
+ <string name="calibrate_pass">校准通过</string>
+ <string name="calibrate_no_pass">校准不通过</string>
+ <string name="equipment_power_low_20_tips">设备电量低于20%\n请及时充电！</string>
+ <string name="equipment_power_low_5_tips">设备电量低于5%\n请及时充电！</string>
+ <string name="sure_text">确定</string>
+ <string name="curr_state_walk_text">当前状态：走路</string>
+ <string name="curr_state_sit_down_text">当前状态：坐下</string>
+ <string name="curr_state_fall_text">当前状态：跌倒</string>
+ <string name="switched_to_stroke_mode_text">已切换为：单腿模式</string>
+ <string name="switched_to_normal_mode_text">已切换为：双腿模式</string>
+ <string name="whether_to_save_configuration_text">是否保存配置？</string>
+ <string name="whether_to_save_param_text">是否保存参数？</string>
+ <string name="whether_to_save_user_data">是否保存用户数据？</string>
+ <string name="save_text">保存</string>
+ <string name="save_success">保存成功</string>
+ <string name="wifi_opened">WIFI已打开</string>
+ <string name="is_sure_emergency_brake_title_text">是否确定紧急制动？</string>
+ <string name="emergency_brake_tips">紧急制动后，不能恢复原来的状态</string>
+ <string name="is_save_user_data_text">是否保存用户数据？</string>
+ <string name="select_curve_text">选择曲线</string>
+ <string name="angle_left_text">角度左</string>
+ <string name="angle_right_text">角度右</string>
+ <string name="angular_velocity_left_text">角速度左</string>
+ <string name="angular_velocity_right_text">角速度右</string>
+ <string name="current_left_text">电流左</string>
+ <string name="current_right_text">电流右</string>
+ <string name="barometric_sensor_text">气压传感器</string>
+ <string name="ui_version_static_sensor_text">UI版静态传感器</string>
+ <string name="is_save_excel_text">是否下载该设备的excel表格？</string>
+ <string name="gait_statistics_text">步态统计和姿态判定</string>
+ <string name="factory_reset_tips_text">确定恢复出厂设置吗？</string>
+ <string name="reset_success">恢复出厂设置成功</string>
+ <string name="are_you_disconnect_text">确定断开蓝牙连接吗？</string>
+ <string name="walk_step_text">步数</string>
+ <string name="walk_text">步</string>
+ <string name="walk_min_text">步频/分钟</string>
+ <string name="walk_long_text">里程</string>
+ <string name="km_text">米</string>
+ <string name="sensor_over_limit_text">传感器超限幅值</string>
+ <string name="static_sensor_over_limit_text">静态传感器超限幅值</string>
+ <string name="left_text">左</string>
+ <string name="right_text">右</string>
+ <string name="input_password_text">请输入密码</string>
+ <string name="password_text">密码</string>
+ <string name="password_two_text">密码:</string>
+ <string name="change_text">修改</string>
+ <string name="confirm_text">确认</string>
+ <string name="gy_ro_left_text">gyro左</string>
+ <string name="gy_ro_right_text">gyro右</string>
+ <string name="accy_left_text">ACCY左</string>
+ <string name="accy_right_text">ACCY右</string>
+ <string name="password_error_text">密码错误</string>
+ <string name="confirm_change_text">确认修改</string>
+ <string name="change_pwd_text">修改密码</string>
+ <string name="developer_mode_setting_text">开发者模式-设置</string>
+ <string name="change_success_text">修改成功</string>
+ <string name="input_old_pwd_text">请输入旧密码</string>
+ <string name="input_new_pwd_text">请输入新密码</string>
+ <string name="confirm_pwd_text">确认密码</string>
+ <string name="input_confirm_pwd_text">请输入确认密码</string>
+ <string name="input_is_not_consistent_text">两次输入的新密码不一致</string>
+ <string name="select_language_text">选择语言</string>
+ <string name="simplified_chinese_text">简体中文</string>
+ <string name="english_text">英文</string>
+ <string name="japanese_language_text">日本语</string>
+ <string name="japanese_text">日文</string>
+
+
+ <string name="btn_sure">确定</string>
+ <string name="btn_cancel">取消</string>
+ <string name="ble_not_supported">不支持BLE蓝牙</string>
+ <string name="ble_off">蓝牙连接断开</string>
+ <string name="ble_connect">蓝牙已连接</string>
+
+ <string name="ble_scan_erre">扫描失败</string>
+ <string name="ble_scan_null">未发现设备</string>
+
+ <string name="ble_device">蓝牙设备</string>
+ <string name="select_ble_device">请选择蓝牙设备</string>
+ <string name="level_secondary">中</string>
+ <string name="level_height">高</string>
+ <string name="level_low">低</string>
+
+ <string name="connect_device_please">请先连接设备</string>
+
+ <string name="net_fail">请求失败</string>
+ <string name="determine_empty">确定清空所有历史数据吗</string>
+
+ <string name="please_open_wifi">请打开wifi开关</string>
+ <string name="wifi_connect_success">WIFI连接成功</string>
+ <string name="wifi_connect_fail">WIFI连接失败</string>
+ <string name="wifi_scan_overtime">扫描超时</string>
+ <string name="please_wait">请稍后...</string>
+
+ <string name="state_walk">走路</string>
+ <string name="state_sit">坐下</string>
+ <string name="state_fall">跌倒</string>
+ <string name="failure_to_modify">修改失败</string>
+ <string name="failure_to_sucess">修改成功</string>
+
+ <string name="charging">充电中</string>
+ <string name="attitude">姿态</string>
+ <string name="attitude_no">暂无</string>
+
+ <string name="limiting">角度限幅</string>
+
+ <string name="item_maximum_braking_force_holding_time">最大马达刹车保持时间</string>
+
+
+
+  <string name="Collection_distance">采集距离</string>
+  <string name="CollectionDate">采集距离</string>
+  <string name="Manually_enter_values">手动输入数值</string>
+ <string name="current">当前</string>
+ <string name="Manual_input">手动输入</string>
+ <string name="msg">当前40 手动输入</string>
+ <string name="msg_ten">当前10 手动输入</string>
+ <string name="default_text_new">默认:10°/s</string>
+
+
+
+    <string name="pam01L1">pam01L1</string>
+    <string name="pam01R1">pam01R1</string>
+    <string name="pam01UI">pam01UI</string>
+
+
+
+ <string name="year">年</string>
+ <string name="mont">月</string>
+
+
+  <string name="Data_view">数据查看</string>
+  <string name="derviceDate">设备数据</string>
+  <string name="connetction">连接</string>
+  <string name="close">断开</string>
+  <string name="Evaluation_history">评估历史</string>
+ <string name="Trigger_time">触发时间</string>
+
+
+
+
+
+
+</resources>

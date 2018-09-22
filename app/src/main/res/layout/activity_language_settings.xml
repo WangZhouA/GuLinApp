@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><!--语言设置页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_language_text"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/btn_simplified_chinese"
+        style="@style/language_linear_style">
+
+        <LinearLayout style="@style/language_linear_child_style">
+
+            <LinearLayout style="@style/language_linear_child_two_style">
+
+                <TextView
+                    style="@style/language_name_style"
+                    android:text="@string/simplified_chinese_text" />
+
+                <TextView
+                    style="@style/language_name_two_style"
+                    android:text="@string/simplified_chinese_text" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_simplified_chinese"
+                style="@style/language_select_img_style" />
+
+        </LinearLayout>
+
+        <View style="@style/developer_middle_line_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_english"
+        style="@style/language_linear_style">
+
+        <LinearLayout style="@style/language_linear_child_style">
+
+            <LinearLayout style="@style/language_linear_child_two_style">
+
+                <TextView
+                    style="@style/language_name_style"
+                    android:text="English" />
+
+                <TextView
+                    style="@style/language_name_two_style"
+                    android:text="@string/english_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_english"
+                style="@style/language_select_img_style"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View style="@style/developer_middle_line_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_japanese"
+        style="@style/language_linear_style">
+
+        <LinearLayout style="@style/language_linear_child_style">
+
+            <LinearLayout style="@style/language_linear_child_two_style">
+
+                <TextView
+                    style="@style/language_name_style"
+                    android:text="@string/japanese_language_text" />
+
+                <TextView
+                    style="@style/language_name_two_style"
+                    android:text="@string/japanese_text" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_japanese"
+                style="@style/language_select_img_style"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View style="@style/developer_middle_line_style" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

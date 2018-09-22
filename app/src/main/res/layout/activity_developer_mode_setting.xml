@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?><!--开发者模式设置页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/developer_text_title_style"
+                android:text="@string/sensor_over_limit_text" />
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="@string/gy_ro_left_text" />
+
+                    <EditText
+                        android:id="@+id/et_gyro_left"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/tv_gyro_left_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-300~300" />
+
+                </LinearLayout>
+
+                <View style="@style/developer_middle_line_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="@string/gy_ro_right_text" />
+
+                    <EditText
+                        android:id="@+id/et_gyro_right"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="200"/>
+
+                    <TextView
+                        android:id="@+id/tv_gyro_right_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-300~300" />
+
+                </LinearLayout>
+
+                <View style="@style/developer_middle_line_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="@string/accy_left_text" />
+
+                    <EditText
+                        android:id="@+id/et_accy_left"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/tv_accy_left_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-900~900" />
+
+                </LinearLayout>
+
+                <View style="@style/developer_middle_line_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="@string/accy_right_text" />
+
+                    <EditText
+                        android:id="@+id/et_accy_right"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="200" />
+
+                    <TextView
+                        android:id="@+id/tv_accy_right_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-900~900" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/developer_text_title_style"
+                android:text="@string/sensor_over_limit_text" />
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="groy" />
+
+                    <EditText
+                        android:id="@+id/et_gyro"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/tv_gyro_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-300~300" />
+
+                </LinearLayout>
+
+                <View style="@style/developer_middle_line_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/developer_linear_style">
+
+                <LinearLayout style="@style/developer_linear_child_style">
+
+                    <TextView
+                        style="@style/developer_attr_name_style"
+                        android:text="ACCY" />
+
+                    <EditText
+                        android:id="@+id/et_accy"
+                        style="@style/developer_input_style"
+                        android:digits="1234567890-"
+                        android:inputType="number"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/et_accy_scope"
+                        style="@style/developer_attr_value_scope"
+                        android:text="-900~900" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_confirm_change"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_green_rectangle_normal"
+        android:text="@string/confirm_change_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

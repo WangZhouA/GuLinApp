@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    >
+
+
+    <include layout="@layout/activity_min_top_bar"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_bluetooth"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/bluetooth_d" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/bluetooth_text"
+                    android:textColor="@color/black_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btn_connect_bluetooth"
+                    android:layout_width="64dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/un_connect_text"
+                    android:textColor="@color/gray_color"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+           <!---->
+            <include layout="@layout/layout_control_trigger_time"></include>
+            <!--马达-->
+            <include layout="@layout/layout_control_motor" />
+            <!--最大助力角范围-->
+            <include layout="@layout/layout_controlassist_angle_range"></include>
+            <!--灵敏度-->
+            <include layout="@layout/layout_control_angular_velocity_sensitivity" />
+            <!--力量档位-->
+            <include layout="@layout/layout_control_power_gear"></include>
+
+            <!--初始刹车力-->
+            <include layout="@layout/layout_control_initial_brake_force"></include>
+            <!--刹车时间-->
+            <include layout="@layout/layout_control_braking_time"></include>
+            <!--最高助力点-->
+            <include layout="@layout/layout_control_highest_point_helps_time"></include>
+            <!--最大刹车力保持时间-->
+            <include layout="@layout/big_wangzhou_brake_foce_time"></include>
+
+
+            <!--底部按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/btn_save_param"
+                    style="@style/control_bottom_btn_style"
+                    android:background="@drawable/btn_thirty_percent_green_rectangle_normal"
+                    android:text="@string/save_param_text" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn_emergency_brake"
+                    style="@style/control_bottom_btn_style"
+                    android:background="@drawable/btn_thirty_percent_orange_rectangle"
+                    android:text="@string/emergency_brake_text" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

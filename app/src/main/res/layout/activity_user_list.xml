@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    >
+
+    <include layout="@layout/header_bar"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/add"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_set_btn_success"
+            android:textColor="#FFFFFF"
+            android:onClick="add"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
